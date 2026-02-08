@@ -1,22 +1,64 @@
-# Real-Time-Object-Detection-and-Voice-Guidance-System
-This project is an AI-based assistive system that combines computer vision (YOLO object detection) with an Arduino ultrasonic distance sensor to detect nearby objects and announce them using voice output. It is designed to help users, especially the visually impaired, to become aware of nearby obstacles.
+# VisionAssist – YOLO-Based Object Detection with Voice Guidance
+
+VisionAssist is a real-time object detection and voice guidance system built using **YOLO (You Only Look Once)**.  
+The system detects objects through a live camera feed and provides **audio feedback**, making it useful as an assistive technology prototype and for smart vision applications.
 
 ---
 
-## 📷 Project Overview
+##Project Overview
 
-The system performs the following functions:
-
-- Detects objects in real time using a webcam and a deep learning model.
-- Measures distance using an ultrasonic sensor connected to Arduino.
-- Provides audio feedback describing the detected object and its distance.
-
-### Example Output
-"There is a person at 75 centimeters"
+The system performs the following operations:
+	•	Detects objects in real time using a webcam and a YOLO object detection model
+	•	Measures distance using an ultrasonic sensor connected to an Arduino
+	•	Provides spoken feedback describing the detected object and its distance
 
 ---
 
-## 🧠 Technologies Used
+## 🚀 Features
+- Real-time object detection using **YOLO**
+- Voice guidance for detected objects
+- Live video processing with **OpenCV**
+- Can be integrated with sensors for distance awareness
+- Modular and extendable design
+
+---
+
+## 🛠️ Technologies Used
+- **Python**
+- **YOLO (Object Detection)**
+- **OpenCV**
+- **Text-to-Speech (TTS)**
+- **Arduino & Ultrasonic Sensor** (optional)
+
+---
+
+## 📂 Project Structure
+
+isionAssist-YOLO-Voice-Guidance/
+│
+├── main.py
+├── yolo/
+│   ├── yolov3.cfg
+│   ├── coco.names
+│
+├── arduino/
+│   └── distance_sensor.ino
+│
+├── README.md
+└── .gitignore
+
+---
+---
+
+## ⚙️ Installation & Setup
+  ### 1️⃣ Clone the Repository
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/VisionAssist-YOLO-Voice-Guidance.git
+    cd VisionAssist-YOLO-Voice-Guidance
+
+##Install Required Libraries
+  '''bash
+   pip install opencv-python numpy pyttsx3
 
 ### Software
 - Python

@@ -5,7 +5,7 @@ The system detects objects through a live camera feed and provides **audio feedb
 
 ---
 
-##Project Overview
+## Project Overview
 
 The system performs the following operations:
  - Detects objects in real time using a webcam and a YOLO object detection model

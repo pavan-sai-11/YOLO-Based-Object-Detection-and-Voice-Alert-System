@@ -56,9 +56,10 @@ visionAssist-YOLO-Voice-Guidance/
     git clone https://github.com/YOUR_USERNAME/VisionAssist-YOLO-Voice-Guidance.git
     cd VisionAssist-YOLO-Voice-Guidance
 
-  ###Install Required Libraries
-    ~~~bash
-    pip install opencv-python numpy pyttsx3
+##Install Required Libraries
+   ### 1️⃣ Clone the Repository
+    ```bash
+       pip install opencv-python numpy pyttsx3
 
 
 ### Software

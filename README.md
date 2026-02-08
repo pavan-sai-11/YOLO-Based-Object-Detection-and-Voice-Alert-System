@@ -34,7 +34,7 @@ The system performs the following operations:
 
 ## 📂 Project Structure
 
-isionAssist-YOLO-Voice-Guidance/
+visionAssist-YOLO-Voice-Guidance/
 │
 ├── main.py
 ├── yolo/
@@ -56,9 +56,10 @@ isionAssist-YOLO-Voice-Guidance/
     git clone https://github.com/YOUR_USERNAME/VisionAssist-YOLO-Voice-Guidance.git
     cd VisionAssist-YOLO-Voice-Guidance
 
-##Install Required Libraries
-  '''bash
-   pip install opencv-python numpy pyttsx3
+  ###Install Required Libraries
+    ~~~bash
+    pip install opencv-python numpy pyttsx3
+
 
 ### Software
 - Python

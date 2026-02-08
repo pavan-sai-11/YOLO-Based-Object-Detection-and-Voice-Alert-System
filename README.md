@@ -8,13 +8,13 @@ The system detects objects through a live camera feed and provides **audio feedb
 ##Project Overview
 
 The system performs the following operations:
-	•	Detects objects in real time using a webcam and a YOLO object detection model
-	•	Measures distance using an ultrasonic sensor connected to an Arduino
-	•	Provides spoken feedback describing the detected object and its distance
+ - Detects objects in real time using a webcam and a YOLO object detection model
+ - Measures distance using an ultrasonic sensor connected to an Arduino
+ - Provides spoken feedback describing the detected object and its distance
 
 ---
 
-## 🚀 Features
+## Features
 - Real-time object detection using **YOLO**
 - Voice guidance for detected objects
 - Live video processing with **OpenCV**
@@ -32,77 +32,47 @@ The system performs the following operations:
 
 ---
 
-## 📂 Project Structure
-
-visionAssist-YOLO-Voice-Guidance/
-│
-├── main.py
-├── yolo/
-│   ├── yolov3.cfg
-│   ├── coco.names
-│
-├── arduino/
-│   └── distance_sensor.ino
-│
-├── README.md
-└── .gitignore
-
----
----
-
 ## ⚙️ Installation & Setup
-  ### 1️⃣ Clone the Repository
-    ```bash
-    git clone https://github.com/YOUR_USERNAME/VisionAssist-YOLO-Voice-Guidance.git
+  ### Clone the Repository
+  
+   ```bash
+	git clone https://github.com/YOUR_USERNAME/VisionAssist-YOLO-Voice-Guidance.git
     cd VisionAssist-YOLO-Voice-Guidance
+```
 
-##Install Required Libraries
-   ### 1️⃣ Clone the Repository
-    ```bash
-       pip install opencv-python numpy pyttsx3
+   ### Install Required Libraries
+   
+  ```bash
+   pip install opencv-python numpy pyttsx3
+  ```
+
+## Download the YOLO weight file and place it inside the yolo/ folder:
+	•	yolov3.weights
+
+## Run the Application
+  ```bash
+  python main.py
+```
+## Output
+  - Camera starts automatically
+  - Objects are detected in real time
+  - Detected objects are announced using voice guidance
 
 
-### Software
-- Python
-- OpenCV (cv2)
-- YOLOv3 Object Detection
-- PySerial
-- pyttsx3 (Text to Speech)
-- NumPy
-
-### Hardware
-- Arduino (UNO / Nano)
-- Ultrasonic Sensor (HC-SR04)
-- Webcam / Laptop Camera
-
----
-
-## 🎯 Features
-
-- Real-time object detection using deep learning
-- Voice alerts for detected obstacles
-- Integration of AI and IoT components
-- Low-cost and easily extendable system
-- Suitable for academic and demonstration purposes
+## Future Enhancements
+  - Upgrade to YOLOv8
+  - Improve distance estimation
+  - Add vibration or mobile alerts
+  - Deploy on Raspberry Pi
+  - Cloud-based object tracking
 
 ---
 
 ## ⚠ Limitations
 
-- Ultrasonic sensor provides only a single distance value, not per object
-- Distance cannot be accurately mapped to a specific detected object
-- Performance may be slow on low-end computers
-- Not suitable for real-world navigation without further enhancements
-
----
-
-## 🚀 Future Enhancements
-
-- Use faster object detection models such as YOLOv4-tiny or YOLOv8
-- Add vibration feedback for silent alerts
-- Use multiple sensors for directional obstacle detection
-- Integrate depth cameras for accurate distance estimation
-- Convert the system into a wearable assistive device
+  - Single-point distance sensing limits object-specific accuracy
+  - Detection accuracy varies with lighting and system performance
+  - Not optimized for real-world deployment
 
 ---
 
@@ -125,4 +95,5 @@ curl -L -o yolov3.weights https://github.com/AlexeyAB/darknet/releases/download/
 
 curl -O https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
 
----
+
+```
